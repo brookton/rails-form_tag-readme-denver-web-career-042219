@@ -1,5 +1,9 @@
+
+<h1> All Posts </h1>
 <ul>
   <% @posts.each do |p| %>
     <li><%= p.title %> - <%= p.description %></li>
   <% end %>
 </ul>
+
+<%= link_to "New Post", "/posts/new" %>
